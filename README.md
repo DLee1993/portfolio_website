@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hello, Welcome to my Portfolio! 👋
 
-## Getting Started
+I am a Frontend Developer based in the R.C.T. of South Wales, UK. In summary, my knowledge lies in creating interactive experiences. Although I am striving to expand my knowledge of backend development to become a more rounded developer.
 
-First, run the development server:
+![DLee1993's Stats](https://github-readme-stats.vercel.app/api?username=DLee1993&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 About Me
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   🔭 I am a community taught developer.
+-   📝 I have developed my skills through Codecademy, Udemy, the Odin Project and various articles and blogs.
+-   🌐 Proud member of Frontendmentor and Codewars.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[![My Skills](https://skillicons.dev/icons?i=js,react,redux,nextjs,ts,html,css,tailwind,mongodb,bootstrap,codepen,figma)](https://skillicons.dev)
 
-## Learn More
+## 🌱 Currently Exploring
 
-To learn more about Next.js, take a look at the following resources:
+-   Exploring the ins and outs of React for dynamic front-end experiences.
+-   Understanding the use of typescript to add safety to my code
+-   Navigating through the world of React Router for seamless page transitions.
+-   Styling with Tailwind and Shadcn to create modern and responsive user interfaces.
+-   Building server-side applications with Next.js.
+-   Diving into MongoDB for efficient and scalable database management.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### I am looking to collaborate on..
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   Anything full stack, I want to work closely with both the front and backend of an application
 
-## Deploy on Vercel
+## 🏆 Achievements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   I have completed various courses ranging from Node.js, flexbox & grid, gsap animations and MERN stack bootcamp courses.
+-   I am also going to be attending the MongoDb University online, there I will gain a more in depth understanding of key topics such as aggregation, indexing, data modeling, and transactions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📬 Get in Touch
+
+-   Connect with me on [Twitter](https://twitter.com/@David_Lee147)
+-   Send me a message on [Discord](https://discordapp.com/users/706100204960612443)
+
+Thanks for stopping by! Let's connect and build together. 🚀
