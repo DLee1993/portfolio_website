@@ -3,31 +3,9 @@
 @tailwind utilities;
 
 :root {
-    --background: hsl(240, 6%, 10%);
-    --foreground: hsl(0, 0%, 95%);
-    --foreground75: hsla(0, 0%, 95%, 0.75);
-    --foreground50: hsla(0, 0%, 95%, 0.5);
-    --foreground25: hsla(0, 0%, 95%, 0.25);
-}
-
-html,
-body {
-    color-scheme: dark;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --background: hsl(0, 0%, 95%);
-        --foreground: hsl(240, 6%, 10%);
-        --foreground75: hsla(240, 6%, 10%, 0.75);
-        --foreground50: hsla(240, 6%, 10%, 0.5);
-        --foreground25: hsla(240, 6%, 10%, 0.25);
-    }
-
-    html,
-    body {
-        color-scheme: light;
-    }
+    --background: hsl(0, 0%, 95%);
+    --foreground: hsl(0, 0%, 9%);
+    --foreground15: hsla(0, 0%, 95%, 0.15);
 }
 
 @layer utilities {
