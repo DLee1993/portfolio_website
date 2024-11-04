@@ -5,7 +5,8 @@
 :root {
     --background: hsl(0, 0%, 95%);
     --foreground: hsl(0, 0%, 9%);
-    --foreground15: hsla(0, 0%, 95%, 0.15);
+    --foreground50: hsla(0, 0%, 9%, 0.5);
+    --foreground15: hsla(0, 0%, 9%, 0.15);
 }
 
 @layer utilities {
