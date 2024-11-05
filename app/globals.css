@@ -9,31 +9,13 @@
     --foreground50: hsla(0, 0%, 9%, 0.5);
     --foreground25: hsla(0, 0%, 9%, 0.25);
 }
-html,
-body {
-    color-scheme: light;
-}
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: hsl(240, 6%, 10%);
-        --foreground: hsl(0, 0%, 95%);
-        --foreground75: hsla(0, 0%, 95%, 0.75);
-        --foreground50: hsla(0, 0%, 95%, 0.5);
-        --foreground25: hsla(0, 0%, 95%, 0.25);
+@layer components {
+    .customWidth {
+        @apply w-11/12 max-w-[640px] mx-auto;
     }
-
-    html,
-    body {
-        color-scheme: dark;
-    }
-}
-
-@layer base {
-    header,
-    main,
-    footer {
-        @apply w-11/12 max-w-2xl mx-auto;
+    .customBtnStylesPrimary {
+        @apply bg-foreground text-background py-[10px] px-[24px] rounded-lg;
     }
 }
 
