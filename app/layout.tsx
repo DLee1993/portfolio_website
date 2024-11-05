@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const inter = Inter({
     weight: ["200", "300", "400", "500", "600", "700", "800"],
     subsets: ["latin"],
 });
@@ -26,9 +26,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body
-                className={`${plusJakartaSans.className} antialiased text-foreground bg-background`}
-            >
+            <body className={`${inter.className} antialiased text-foreground bg-background`}>
                 <Header />
                 <main>{children}</main>
                 <Footer />
