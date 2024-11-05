@@ -16,8 +16,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
+        --background: hsl(240, 6%, 10%);
+        --foreground: hsl(0, 0%, 95%);
     }
 }
 
@@ -44,6 +44,12 @@ body {
     html,
     body {
         color-scheme: light;
+    }
+}
+
+@layer components {
+    .customWidth {
+        @apply w-11/12 max-w-2xl mx-auto;
     }
 }
 
