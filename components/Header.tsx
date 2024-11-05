@@ -1,10 +1,21 @@
-import Link from "next/link";
+// import Link from "next/link";
 import AccentDot from "./AccentDot";
 
 const Header = () => {
     return (
         <header className="p-5 sm:p-7 md:p-10 flex justify-between items-start">
-            <ul className="text-sm font-bold">
+            <aside className="w-fit flex justify-center items-center gap-2">
+                <AccentDot />
+                <p className="text-sm font-bold">Available for work</p>
+            </aside>
+        </header>
+    );
+};
+export default Header;
+
+{
+    /*
+    <ul className="text-sm font-bold">
                 <li>
                     <Link
                         href="https://github.com/DLee1993"
@@ -32,12 +43,5 @@ const Header = () => {
                         discord
                     </Link>
                 </li>
-            </ul>
-            <aside className="w-fit flex justify-center items-center gap-2">
-                <AccentDot />
-                <p className="text-sm font-bold">Available for work</p>
-            </aside>
-        </header>
-    );
-};
-export default Header;
+            </ul> */
+}
