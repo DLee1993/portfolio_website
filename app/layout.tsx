@@ -26,7 +26,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${plusJakartaSans.className} antialiased`}>
+            <body
+                className={`${plusJakartaSans.className} antialiased text-foreground bg-background`}
+            >
                 <Header />
                 <main>{children}</main>
                 <Footer />
