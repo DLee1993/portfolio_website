@@ -18,6 +18,9 @@
     :root {
         --background: hsl(240, 6%, 10%);
         --foreground: hsl(0, 0%, 95%);
+        --foreground75: hsla(0, 0%, 95%, 0.75);
+        --foreground50: hsla(0, 0%, 95%, 0.5);
+        --foreground25: hsla(0, 0%, 95%, 0.25);
     }
 }
 
