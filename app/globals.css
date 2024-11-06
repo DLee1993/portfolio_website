@@ -14,9 +14,6 @@
     .customWidth {
         @apply w-11/12 max-w-[640px] mx-auto;
     }
-    .customBtnStylesPrimary {
-        @apply bg-foreground text-background py-[10px] px-[24px] rounded-lg;
-    }
 }
 
 @layer utilities {
