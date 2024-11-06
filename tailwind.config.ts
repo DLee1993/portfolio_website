@@ -8,6 +8,11 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            fontSize: {
+                baseText: "var(--fs-base)",
+                heading: "var(--fs-header)",
+                subHeading: "var(--fs-subHeader)"
+            },
             colors: {
                 background: "var(--background)",
                 foreground: "var(--foreground)",

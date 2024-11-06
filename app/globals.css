@@ -24,3 +24,27 @@
         text-wrap: balance;
     }
 }
+
+/* For browsers that support clamp  */
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+        --fs-base: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
+        --fs-header: clamp(2.34rem, 1.19vi + 2.05rem, 3rem);
+        --fs-subHeader: clamp(2.03rem, 0.85vi + 1.82rem, 2.5rem);
+    }
+}
+/* For browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+        --fs-base: 1rem;
+        --fs-header: 2.34rem;
+        --fs-subHeader: 2.03rem;
+    }
+    @media screen and (min-width: 1280px) {
+        :root {
+            --fs-base: 1.13rem;
+            --fs-header: 3rem;
+            --fs-subHeader: 2.5rem;
+        }
+    }
+}
