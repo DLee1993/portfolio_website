@@ -29,22 +29,22 @@
 @supports (font-size: clamp(1rem, 1vi, 1rem)) {
     :root {
         --fs-base: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
-        --fs-header: clamp(2.34rem, 1.19vi + 2.05rem, 3rem);
-        --fs-subHeader: clamp(2.03rem, 0.85vi + 1.82rem, 2.5rem);
+        --fs-header: clamp(1.88rem, .68vi + 1.7rem, 2.25rem);
+        --fs-subHeader: clamp(1.63rem, 0.45vi + 1.51rem, 1.88rem);
     }
 }
 /* For browsers that don't support clamp */
 @supports not (font-size: clamp(1rem, 1vi, 1rem)) {
     :root {
         --fs-base: 1rem;
-        --fs-header: 2.34rem;
-        --fs-subHeader: 2.03rem;
+        --fs-header: 1.88rem;
+        --fs-subHeader: 1.63rem;
     }
     @media screen and (min-width: 1280px) {
         :root {
             --fs-base: 1.13rem;
-            --fs-header: 3rem;
-            --fs-subHeader: 2.5rem;
+            --fs-header: 2.25rem;
+            --fs-subHeader: 1.88rem;
         }
     }
 }
