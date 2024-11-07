@@ -19,6 +19,7 @@ const config: Config = {
                 foreground75: "var(--foreground75)",
                 foreground50: "var(--foreground50)",
                 foreground25: "var(--foreground25)",
+                foreground4: "var(--foreground4)",
             },
         },
     },

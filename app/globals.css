@@ -8,6 +8,7 @@
     --foreground75: hsla(0, 0%, 9%, 0.75);
     --foreground50: hsla(0, 0%, 9%, 0.5);
     --foreground25: hsla(0, 0%, 9%, 0.25);
+    --foreground4: hsla(0, 0%, 9%, 0.04);
 }
 
 @layer components {
