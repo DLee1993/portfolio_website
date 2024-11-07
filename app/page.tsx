@@ -120,7 +120,7 @@ export default function Home() {
                     ))}
                 </ul>
             </section>
-            <section>
+            <section className="customWidth">
                 <Contact />
             </section>
         </section>
