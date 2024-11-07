@@ -9,7 +9,7 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
     const path = usePathname();
     return (
-        <section className="customWidth">
+        <section className={path === "/contact" ? "customWidth" : ""}>
             <aside className="flex justify-between items-center border-b border-foreground25">
                 <h2 className="text-subHeading font-semibold">Let&apos;s connect</h2>
                 <AvailableToWork />
