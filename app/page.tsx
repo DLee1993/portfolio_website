@@ -2,14 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import AvailableToWork from "@/components/AvailableToWork";
 import SocialLinks from "@/components/SocialLinks";
-import { openSource, projects, questions } from "@/data/portfolioData";
+import { openSource, projects } from "@/data/portfolioData";
 import CustomBtn from "@/components/CustomBtn";
 import Arrow from "@/components/Arrow";
 import Contact from "@/components/Contact";
 
 export default function Home() {
     return (
-        <section className="flex flex-col space-y-16 lg:space-y-24">
+        <section className="flex flex-col space-y-16 mb-16 lg:mb-20">
             <section className="customWidth border-b border-foreground25">
                 <AvailableToWork />
                 <h1 className="text-heading font-semibold">Helô, I&apos;m David.</h1>
@@ -36,7 +36,7 @@ export default function Home() {
                         time.
                     </p>
                 </aside>
-                <section className="flex flex-col gap-20 w-full max-w-4xl mx-auto mt-16 lg:mt-20">
+                <section className="flex flex-col gap-20 w-full max-w-4xl mx-auto my-16 lg:my-20">
                     {projects.map((project, index) => (
                         <article key={index} className="px-2">
                             <figure
@@ -102,20 +102,6 @@ export default function Home() {
                                 </article>
                                 <Arrow />
                             </Link>
-                        </li>
-                    ))}
-                </ul>
-            </section>
-            <section>
-                <aside className="customWidth text-center">
-                    <h2 className="text-subHeading font-semibold">Have questions?</h2>
-                    <p>Here are some answers to questions you may have.</p>
-                </aside>
-                <ul className="mt-12 columns-1 md:columns-2 break-inside-avoid-column space-y-8 w-11/12 max-w-4xl mx-auto">
-                    {questions.map((question, index) => (
-                        <li key={index} className="flex flex-col gap-3">
-                            <h3 className="font-bold">{question.question}</h3>
-                            <p className="text-sm">{question.answer}</p>
                         </li>
                     ))}
                 </ul>

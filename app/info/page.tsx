@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const page = () => {
     return (
-        <section className="customWidth flex flex-col space-y-16">
+        <section className="customWidth flex flex-col space-y-16 mb-16 lg:mb-20">
             <section>
                 <h1 className="text-heading font-semibold">
                     Change is inevitable, Growth is optional.
