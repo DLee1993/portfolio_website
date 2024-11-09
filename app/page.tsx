@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import AvailableToWork from "@/components/AvailableToWork";
@@ -6,6 +8,22 @@ import { openSource, projects } from "@/data/portfolioData";
 import CustomBtn from "@/components/CustomBtn";
 import Arrow from "@/components/Arrow";
 import Contact from "@/components/Contact";
+import { motion } from "framer-motion";
+
+const motionElement = {
+    hidden: {
+        opacity: 0,
+        y: 50,
+    },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 1.3,
+            ease: "anticipate",
+        },
+    },
+};
 
 export default function Home() {
     return (
@@ -44,16 +62,26 @@ export default function Home() {
                                     index / 2 == 0
                                         ? "flex-col md:flex-row"
                                         : "flex-col md:flex-row-reverse"
-                                } justify-between items-center gap-7 lg:gap-10`}
+                                } justify-between items-center gap-7 lg:gap-10 overflow-hidden`}
                             >
-                                <Image
-                                    src={project.screenshot}
-                                    alt="screenshot of project"
-                                    width={1000}
-                                    height={1000}
-                                    className="w-[385px] h-auto"
-                                />
-                                <figcaption
+                                <motion.div
+                                    initial={motionElement.hidden}
+                                    whileInView={motionElement.show}
+                                    viewport={{ once: true, amount: 0.1 }}
+                                >
+                                    <Image
+                                        src={project.screenshot}
+                                        alt="screenshot of project"
+                                        width={1000}
+                                        height={1000}
+                                        className="w-[385px] h-auto"
+                                    />
+                                </motion.div>
+
+                                <motion.figcaption
+                                    initial={motionElement.hidden}
+                                    whileInView={motionElement.show}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     className={`w-full max-w-[385px] md:max-w-none flex-1 border-b-[1px] md:border-b-0 ${
                                         index / 2 == 0 ? "md:border-l-[1px]" : "md:border-r-[1px]"
                                     } border-foreground25 md:px-4 pb-10 md:pb-0`}
@@ -76,7 +104,7 @@ export default function Home() {
                                             see the code
                                         </Link>
                                     </aside>
-                                </figcaption>
+                                </motion.figcaption>
                             </figure>
                         </article>
                     ))}
