@@ -16,7 +16,7 @@ const Header = () => {
                         href="/info"
                         className={`${
                             path === "/info"
-                                ? "text-foreground"
+                                ? "text-foreground font-semibold"
                                 : "text-foreground50 hover:text-foreground"
                         }`}
                     >
@@ -28,7 +28,7 @@ const Header = () => {
                         href="/contact"
                         className={`${
                             path === "/contact"
-                                ? "text-foreground"
+                                ? "text-foreground font-semibold"
                                 : "text-foreground50 hover:text-foreground"
                         }`}
                     >
