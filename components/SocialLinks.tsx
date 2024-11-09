@@ -10,6 +10,7 @@ const SocialLinks = () => {
                     href="https://github.com/DLee1993"
                     target="_blank"
                     className="block p-3 text-foreground hover:text-foreground"
+                    aria-label="link to github profile"
                 >
                     <FaGithub className="group-hover:text-background transition-all duration-300" />
                 </Link>
@@ -20,6 +21,7 @@ const SocialLinks = () => {
                     href="https://discordapp.com/users/706100204960612443"
                     target="_blank"
                     className="block p-3 text-foreground hover:text-foreground"
+                    aria-label="link to disord profile"
                 >
                     <FaDiscord className="group-hover:text-background transition-all duration-300" />
                 </Link>
@@ -30,6 +32,7 @@ const SocialLinks = () => {
                     href="https://www.linkedin.com/in/wd-david-lee"
                     target="_blank"
                     className="block p-3 text-foreground hover:text-foreground"
+                    aria-label="link to linkedin profile"
                 >
                     <FaLinkedinIn className="group-hover:text-background transition-all duration-300" />
                 </Link>
