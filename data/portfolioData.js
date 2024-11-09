@@ -30,26 +30,6 @@ export const openSource = [
     },
 ];
 
-export const questions = [
-    {
-        question:
-            "Why did you decide to pursue coding? Why are you interested in a Web Developer career?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    },
-    {
-        question: "What are your favorite types of projects to work on?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    },
-    {
-        question: "Where do you see your web development career in five years?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    },
-    {
-        question: "What are your interests outside of web and software development?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
-    },
-];
-
 export const technicalSkills = [
     {
         skill: "HTML, CSS, JavaScript",
