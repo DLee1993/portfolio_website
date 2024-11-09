@@ -12,26 +12,12 @@ const Header = () => {
             </Link>
             <ul className="flex justify-center items-center gap-2">
                 <li>
-                    <Link
-                        href="/info"
-                        className={`${
-                            path === "/info"
-                                ? "text-foreground font-semibold"
-                                : "text-foreground50 hover:text-foreground"
-                        }`}
-                    >
+                    <Link href="/info" className={`${path === "/info" && "underline"}`}>
                         info
                     </Link>
                 </li>
                 <li>
-                    <Link
-                        href="/contact"
-                        className={`${
-                            path === "/contact"
-                                ? "text-foreground font-semibold"
-                                : "text-foreground50 hover:text-foreground"
-                        }`}
-                    >
+                    <Link href="/contact" className={`${path === "/contact" && "underline"}`}>
                         contact
                     </Link>
                 </li>
