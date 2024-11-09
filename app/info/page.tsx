@@ -51,7 +51,14 @@ const page = () => {
                 </ul>
             </section>
             <section className="grid place-content-center">
-                <Link download={true} href="" className="flex items-center justify-center h-10 rounded bg-foreground px-6 text-background transition-all duration-300 hover:bg-foreground hover:ring-2 hover:ring-foreground hover:ring-offset-2 text-sm">
+                <Link
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    locale={false}
+                    download
+                    className="flex items-center justify-center h-10 rounded bg-foreground px-6 text-background transition-all duration-300 hover:bg-foreground hover:ring-2 hover:ring-foreground hover:ring-offset-2 text-sm"
+                >
                     Download Resume
                 </Link>
             </section>
