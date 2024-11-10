@@ -1,53 +1,72 @@
-import Contact from "@/components/Contact";
-import { technicalSkills } from "@/data/portfolioData";
 import Link from "next/link";
+import { technicalSkills } from "@/data/portfolioData";
+import ContactBar from "@/components/ContactBar";
+import { FaArrowRight } from "react-icons/fa";
 
 const page = () => {
     return (
-        <section className="customWidth flex flex-col space-y-16 mb-16 lg:mb-20">
-            <section>
-                <h1 className="text-heading font-semibold">
+        <section className="customWidth flex flex-col space-y-16 mb-2">
+            <section className="my-6">
+                <h1 className="text-2xl font-semibold">
                     Change is inevitable, Growth is optional.
                 </h1>
-                <aside className="my-10 flex flex-col space-y-4">
+                <aside className="mt-4 flex flex-col space-y-4">
                     <p>
-                        Hello, I&apos;m David, a detail-oriented and dedicated developer who creates
-                        responsive, modern web apps. I&apos;m looking for a career that will
-                        challenge me and allow me to contribute to exciting projects while also
-                        supporting my growth in frontend development.
+                        Hello, I&apos;m David, a detail-oriented and passionate developer who
+                        produces responsive, modern web applications. I&apos;m searching for a
+                        position that will challenge me and allow me to contribute to exciting
+                        projects while also advancing my frontend development skills.
                     </p>
                     <p>
-                        Over the last year, I&apos;ve been expanding my knowledge and understanding
-                        of the key technologies in web development through various courses and
-                        projects. Having a deeper understanding of the these technologies has not
-                        only given me the confidence to try new technologies to solve a problem, it
-                        has helped me to integrate and use my current tech stack more efficiently.
-                        The current technologies I use to build are React, Next.js, Tailwind CSS,
-                        Shadcn UI, and Typescript.
+                        I&apos;ve spent the previous year improving my expertise and comprehension
+                        of the essential technologies in web development through numerous courses
+                        and projects. Having a better understanding of various technologies has not
+                        only given me the courage to attempt new ones to address problems, but it
+                        has also helped me integrate and use my present tech stack more effectively.
+                        I now build with React, Next.js, Tailwind CSS, Shadcn UI, and Typescript.
                     </p>
                     <p>
-                        As of today, I am simply developing, whether it is typesafe components or
-                        entire web applications. My current focus is on accessibility; I want
-                        everyone to have a consistent experience while visiting my websites.
+                        As of now, I am simply developing, whether it is typesafe components or full
+                        web applications. My current focus is on accessibility; I want everyone to
+                        have the same experience while visiting my websites.
                     </p>
                     <p>
-                        When I&apos;m away from the keyboard I am a part of a kickboxing academy
-                        that pushes me beyond my current physical limits.
+                        When I&apos;m not at the keyboard, I train at a kickboxing academy, which pushes
+                        me beyond my current physical limitations.
                     </p>
                 </aside>
             </section>
             <section>
                 <h2 className="text-lg font-semibold">Technical competence</h2>
-                <ul className="mt-10">
+                <ul className="mt-6">
                     {technicalSkills.map((tech, index) => (
-                        <li
-                            key={index}
-                            className="relative text-foreground hover:bg-foreground4 border-b-[1px] border-foreground25 last-of-type:border-none py-4 px-2 flex justify-between items-center transition-all duration-200"
-                        >
+                        <li key={index} className="relative py-2">
                             <h3 className="font-semibold">{tech.skill}</h3>
                             <p className="text-foreground75 text-sm">{tech.description}</p>
                         </li>
                     ))}
+                </ul>
+                <p className="flex gap-2 justify-start items-center my-5">
+                    <FaArrowRight size="0.75rem" />
+                    Continuously exploring new fields and learning...
+                </p>
+            </section>
+            <section>
+                <h2 className="text-lg font-semibold">Personal Interests</h2>
+                <ul className="mt-6">
+                    <li className="py-2">
+                        <h3 className="font-semibold mb-2">Kickboxing</h3>
+                        <p className="text-foreground75">
+                            Around this time last year, I decided to better my physical and mental
+                            health. I started the same way everyone else does: at the gym. However,
+                            I quickly felt a loss of drive due to the repetitive nature of my
+                            activities. So I decided to explore alternate fitness choices.
+                            That&apos;s when I discovered Paragon Kickboxing Academy, which offered
+                            a unique approach to training while teaching a combat sport. I accepted
+                            the offer of a two-week trial and never looked back. I&apos;m now
+                            working on getting my weight under control in order to compete in 2025.
+                        </p>
+                    </li>
                 </ul>
             </section>
             <section className="grid place-content-center">
@@ -62,9 +81,7 @@ const page = () => {
                     Download Resume
                 </Link>
             </section>
-            <section>
-                <Contact />
-            </section>
+            <ContactBar />
         </section>
     );
 };
