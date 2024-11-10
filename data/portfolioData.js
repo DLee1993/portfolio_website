@@ -15,6 +15,22 @@ export const projects = [
         sourceCode: "https://www.github.com",
         screenshot: "/image2.png",
     },
+    {
+        title: "Personal task management app.",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        liveSite: "https://www.youtube.com",
+        sourceCode: "https://www.github.com",
+        screenshot: "/image1.png",
+    },
+    {
+        title: "Personal task management app.",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        liveSite: "https://www.youtube.com",
+        sourceCode: "https://www.github.com",
+        screenshot: "/image2.png",
+    },
 ];
 
 export const openSource = [
