@@ -1,19 +1,19 @@
 export const projects = [
     {
-        title: "Jot down tasks with this personal task management app.",
+        title: "Personal task management app.",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         liveSite: "https://www.youtube.com",
         sourceCode: "https://www.github.com",
-        screenshot: "/image100.png",
+        screenshot: "/image1.png",
     },
     {
-        title: "Jot down tasks with this personal task management app.",
+        title: "Personal task management app.",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         liveSite: "https://www.youtube.com",
         sourceCode: "https://www.github.com",
-        screenshot: "/image100.png",
+        screenshot: "/image2.png",
     },
 ];
 
