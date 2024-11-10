@@ -9,9 +9,7 @@ const config: Config = {
     theme: {
         extend: {
             fontSize: {
-                baseText: "var(--fs-base)",
-                heading: "var(--fs-header)",
-                subHeading: "var(--fs-subHeader)"
+                base: "0.938rem",
             },
             colors: {
                 background: "var(--background)",
