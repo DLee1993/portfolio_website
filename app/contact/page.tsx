@@ -20,6 +20,8 @@ export default page;
                 <SocialLinks />
             </section>
         </section>
+
+        I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. or have a project in mind? Let's connect.
     
 */
 }
