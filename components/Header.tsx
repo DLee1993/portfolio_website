@@ -10,7 +10,7 @@ const Header = () => {
             <Link href="/" className="font-medium">
                 dl.
             </Link>
-            <ul className="flex justify-center items-center gap-2">
+            <ul className="flex justify-center items-center gap-2 font-medium">
                 <li>
                     <Link href="/info" className={`${path === "/info" && "underline"}`}>
                         info
