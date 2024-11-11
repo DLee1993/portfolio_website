@@ -1,29 +1,23 @@
+import AvailableToWork from "@/components/AvailableToWork";
+import ContactBar from "@/components/ContactBar";
 import ContactForm from "@/components/ContactForm";
 
 const page = () => {
-    return <h1>hello</h1>;
-};
-export default page;
-
-{
-    /**
-
-    <section className={path === "/contact" ? "customWidth" : ""}>
-            <aside className="flex justify-between items-center border-b border-foreground25">
-                <h2 className="text-subHeading font-semibold">Let&apos;s connect</h2>
+    return (
+        <section className="customWidth flex flex-col space-y-10 mb-6">
+            <aside className="flex justify-between items-center border-b border-foreground25 pb-6">
+                <h2 className="text-2xl font-semibold">Let&apos;s connect</h2>
                 <AvailableToWork />
             </aside>
-            <p className="mt-10">
-                Thanks for checking out my portfolio. If you&apos;d like to get in touch, you can
-                reach me using the following methods.
+            <p>
+                Thanks for checking out my portfolio. I&apos;m currently looking to join a
+                cross-functional team that values improving people&apos;s lives through accessible
+                applications. If you&apos;d like to reach out and chat, you can reach me using the
+                following methods.
             </p>
-            {path === "/contact" && <ContactForm />}
-            <section className="w-fit my-12 flex justify-center items-center gap-2">
-                <SocialLinks />
-            </section>
+            <ContactForm />
+            <ContactBar />
         </section>
-
-        I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. or have a project in mind? Let's connect.
-    
-*/
-}
+    );
+};
+export default page;
