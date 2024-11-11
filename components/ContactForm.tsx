@@ -137,7 +137,7 @@ const ContactForm = () => {
                 </section>
             ) : (
                 <section className="w-full">
-                    <form className="mt-10 mb-5" onSubmit={handleSubmit(processForm)}>
+                    <form className="mb-5" onSubmit={handleSubmit(processForm)}>
                         <section className="w-full h-full border-y-[1px] border-foreground overflow-hidden">
                             {currentStep === 0 && (
                                 <fieldset>
