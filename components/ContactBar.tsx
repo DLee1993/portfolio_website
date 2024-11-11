@@ -13,7 +13,7 @@ const ContactBar = () => {
                     <FaGlobe className="hidden min-[365px]:block"/>
                     <p>Connect with me</p>
                 </span>
-                <FaArrowRight className="hidden min-[365px]:block -rotate-45 transition-all duration-300 group-hover:rotate-0" />
+                <FaArrowRight size=".75rem" className="hidden min-[365px]:block -rotate-45 transition-all duration-300 group-hover:rotate-0" />
             </Link>
             <SocialLinks />
         </div>

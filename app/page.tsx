@@ -83,7 +83,7 @@ export default function Home() {
                                         {source.description}
                                     </p>
                                 </article>
-                                <FaArrowRight className="hidden min-[365px]:block -rotate-45 transition-all duration-300 group-hover:rotate-0" />
+                                <FaArrowRight size=".75rem" className="hidden min-[365px]:block -rotate-45 transition-all duration-300 group-hover:rotate-0" />
                             </Link>
                         </li>
                     ))}
