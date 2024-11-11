@@ -36,7 +36,7 @@ export default function Home() {
                         time.
                     </p>
                 </aside>
-                <ul className="flex flex-col space-y-24 mt-16">
+                <ul className="flex flex-col space-y-20 mt-12">
                     {projects.map((project, index) => (
                         <li key={`project-${index + 1}`}>
                             <Link
