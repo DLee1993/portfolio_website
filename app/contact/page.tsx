@@ -4,8 +4,8 @@ import ContactForm from "@/components/ContactForm";
 
 const page = () => {
     return (
-        <section className="customWidth flex flex-col space-y-10 mb-6">
-            <aside className="flex justify-between items-center border-b border-foreground25 pb-6">
+        <section className="customWidth flex flex-col space-y-10 my-6">
+            <aside className="flex flex-col-reverse min-[540px]:flex-row justify-between items-start sm:items-center gap-4 border-b border-foreground25 pb-6">
                 <h2 className="text-2xl font-semibold">Let&apos;s connect</h2>
                 <AvailableToWork />
             </aside>
