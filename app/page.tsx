@@ -75,6 +75,7 @@ export default function Home() {
                         >
                             <Link
                                 href={source.link}
+                                target="_blank"
                                 className="group text-foreground hover:bg-foreground4 py-4 px-2 flex justify-between items-center transition-all duration-200"
                             >
                                 <article className="w-11/12">
