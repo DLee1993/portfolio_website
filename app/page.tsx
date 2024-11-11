@@ -9,7 +9,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function Home() {
     return (
-        <section className="flex flex-col mb-2">
+        <section className="flex flex-col mb-6">
             <div className="customWidth flex justify-end my-6">
                 <AvailableToWork />
             </div>

@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const page = () => {
     return (
-        <section className="customWidth flex flex-col space-y-16 mb-2">
+        <section className="customWidth flex flex-col space-y-16 mb-6">
             <section className="my-6">
                 <h1 className="text-2xl font-semibold border-b-[1px] border-foreground25 py-6">
                     Change is inevitable, Growth is optional.
