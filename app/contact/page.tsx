@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ContactForm";
+
 const page = () => {
     return <h1>hello</h1>;
 };
