@@ -2,20 +2,29 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { openSource, projects } from "@/data/portfolioData";
 import AvailableToWork from "@/components/AvailableToWork";
 import ContactBar from "@/components/ContactBar";
+import { container, item } from "@/lib/framerMotionVariants";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function Home() {
     return (
-        <section className="flex flex-col mb-6">
-            <div className="customWidth flex justify-end my-6">
+        <motion.section
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col mb-6"
+        >
+            <motion.div variants={item} className="customWidth flex justify-end my-6">
                 <AvailableToWork />
-            </div>
+            </motion.div>
             <section className="customWidth">
-                <h1 className="text-2xl font-semibold">Helô, I&apos;m David.</h1>
-                <p className="mt-2 text-[15px]">
+                <motion.h1 variants={item} className="text-2xl font-semibold">
+                    Helô, I&apos;m David.
+                </motion.h1>
+                <motion.p variants={item} className="mt-2 text-[15px]">
                     I specialise in frontend development using React and Next.js, and I am
                     passionate about building dynamic and responsive web applications. My current
                     interest is accessibility; I want everyone to have the same experience while
@@ -23,22 +32,29 @@ export default function Home() {
                     <br />
                     <br />
                     Welcome to my digital personality.
-                </p>
-                <div className="my-12">
+                </motion.p>
+                <motion.div variants={item} className="my-12">
                     <ContactBar />
-                </div>
+                </motion.div>
             </section>
             <section className="customWidth">
                 <aside>
-                    <h2 className="text-lg font-semibold">Explore my work</h2>
-                    <p>
+                    <motion.h2 variants={item} className="text-lg font-semibold">
+                        Explore my work
+                    </motion.h2>
+                    <motion.p variants={item}>
                         Transforming the ordinary into the extraordinary, one line of code at a
                         time.
-                    </p>
+                    </motion.p>
                 </aside>
                 <ul className="flex flex-col space-y-20 mt-12">
                     {projects.map((project, index) => (
-                        <li key={`project-${index + 1}`}>
+                        <motion.li
+                            key={`project-${index + 1}`}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true, amount: 0.25 }}
+                        >
                             <Link
                                 href={project.liveSite}
                                 target="_blank"
@@ -58,7 +74,7 @@ export default function Home() {
                                     <p>{project.description}</p>
                                 </article>
                             </Link>
-                        </li>
+                        </motion.li>
                     ))}
                 </ul>
             </section>
@@ -84,7 +100,10 @@ export default function Home() {
                                         {source.description}
                                     </p>
                                 </article>
-                                <FaArrowRight size=".75rem" className="hidden min-[365px]:block -rotate-45 transition-all duration-300 group-hover:rotate-0" />
+                                <FaArrowRight
+                                    size=".75rem"
+                                    className="hidden min-[365px]:block -rotate-45 transition-all duration-300 group-hover:rotate-0"
+                                />
                             </Link>
                         </li>
                     ))}
@@ -93,6 +112,6 @@ export default function Home() {
             <section className="customWidth">
                 <ContactBar />
             </section>
-        </section>
+        </motion.section>
     );
 }

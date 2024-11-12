@@ -1,39 +1,51 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { technicalSkills } from "@/data/portfolioData";
 import ContactBar from "@/components/ContactBar";
+import { container, item } from "@/lib/framerMotionVariants";
 import { FaArrowRight } from "react-icons/fa";
 
 const page = () => {
     return (
-        <section className="customWidth flex flex-col space-y-16 my-6">
+        <motion.section
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="customWidth flex flex-col space-y-16 my-6"
+        >
             <section>
-                <h1 className="text-2xl font-semibold border-b-[1px] border-foreground25 pb-6">
+                <motion.h1
+                    variants={item}
+                    className="text-2xl font-semibold border-b-[1px] border-foreground25 pb-6"
+                >
                     Change is inevitable, Growth is optional.
-                </h1>
+                </motion.h1>
                 <aside className="mt-6 flex flex-col space-y-4">
-                    <p>
+                    <motion.p variants={item}>
                         Hello, I&apos;m David, a detail-oriented and passionate developer who
                         produces responsive, modern web applications. I&apos;m searching for a
                         position that will challenge me and allow me to contribute to exciting
                         projects while also advancing my frontend development skills.
-                    </p>
-                    <p>
+                    </motion.p>
+                    <motion.p variants={item}>
                         I&apos;ve spent the previous year improving my expertise and comprehension
                         of the essential technologies in web development through numerous courses
                         and projects. Having a better understanding of various technologies has not
                         only given me the courage to attempt new ones to address problems, but it
                         has also helped me integrate and use my present tech stack more effectively.
                         I now build with React, Next.js, Tailwind CSS, Shadcn UI, and Typescript.
-                    </p>
-                    <p>
+                    </motion.p>
+                    <motion.p variants={item}>
                         As of now, I am simply developing, whether it is typesafe components or full
                         web applications. My current focus is on accessibility; I want everyone to
                         have the same experience while visiting my websites.
-                    </p>
-                    <p>
-                        When I&apos;m not at the keyboard, I train at a kickboxing academy, which pushes
-                        me beyond my current physical limitations.
-                    </p>
+                    </motion.p>
+                    <motion.p variants={item}>
+                        When I&apos;m not at the keyboard, I train at a kickboxing academy, which
+                        pushes me beyond my current physical limitations.
+                    </motion.p>
                 </aside>
             </section>
             <section>
@@ -82,7 +94,7 @@ const page = () => {
                 </Link>
             </section>
             <ContactBar />
-        </section>
+        </motion.section>
     );
 };
 export default page;
